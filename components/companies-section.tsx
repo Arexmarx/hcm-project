@@ -11,10 +11,19 @@ export default function CompaniesSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Phẩm Chất Đạo Đức Cách Mạng
+            Xây Dựng Đạo Đức Cách Mạng
           </h2>
-          <p className="text-white/75 text-lg max-w-3xl mx-auto">
+          <p className="text-white/75 text-lg max-w-3xl mx-auto mb-6">
             Theo tư tưởng Hồ Chí Minh, đạo đức là cái "gốc" của người cách mạng
+          </p>
+          <div className="glass p-6 rounded-lg max-w-3xl mx-auto">
+            <p className="text-white italic text-lg">
+              "Cũng như sông thì có nguồn mới có nước... Người cách mạng phải có đạo đức, không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân"
+            </p>
+            <p className="text-white/60 mt-2">- Hồ Chí Minh</p>
+          </div>
+          <p className="text-white/75 mt-6">
+            <strong className="text-white">Phương châm:</strong> Đạo đức không phải tự nhiên có, mà do đấu tranh, rèn luyện bền bỉ hàng ngày ("ngọc càng mài càng sáng, vàng càng luyện càng trong")
           </p>
         </div>
 
@@ -102,8 +111,23 @@ export default function CompaniesSection() {
 
             <div className="space-y-4">
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Cần - Kiệm - Liêm - Chính</h4>
-                <p className="text-white/75 text-sm">Siêng năng, tiết kiệm, trong sạch, thẳng thắn - bốn đức tính nền tảng</p>
+                <h4 className="text-white font-bold mb-2">Cần</h4>
+                <p className="text-white/75 text-sm">Siêng năng, lao động có kế hoạch, sáng tạo</p>
+              </Card>
+
+              <Card className="glass p-4">
+                <h4 className="text-white font-bold mb-2">Kiệm</h4>
+                <p className="text-white/75 text-sm">Tiết kiệm, không hoang phí</p>
+              </Card>
+
+              <Card className="glass p-4">
+                <h4 className="text-white font-bold mb-2">Liêm</h4>
+                <p className="text-white/75 text-sm">Trong sạch, không tham lam</p>
+              </Card>
+
+              <Card className="glass p-4">
+                <h4 className="text-white font-bold mb-2">Chính</h4>
+                <p className="text-white/75 text-sm">Thẳng thắn, đứng đắn</p>
               </Card>
 
               <Card className="glass p-4">
@@ -112,19 +136,93 @@ export default function CompaniesSection() {
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Khiêm Tốn & Trách Nhiệm</h4>
-                <p className="text-white/75 text-sm">Không tự mãn, luôn cầu tiến bộ, dám làm dám chịu</p>
+                <h4 className="text-white font-bold mb-2">Đức Khiêm Tốn</h4>
+                <p className="text-white/75 text-sm">Không tự mãn, kiêu ngạo, luôn cầu tiến bộ</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Tình Yêu Thương Con Người</h4>
-                <p className="text-white/75 text-sm">Tình thương mênh mông dành cho mọi kiếp người</p>
+                <h4 className="text-white font-bold mb-2">Trung Thực & Trách Nhiệm</h4>
+                <p className="text-white/75 text-sm">Trung thực với mình, với người, với việc. Dám làm, dám chịu trách nhiệm, không đổ lỗi cho hoàn cảnh</p>
               </Card>
             </div>
           </div>
         </div>
 
-        {/* Section 3: Nhiệm vụ của Sinh viên */}
+        {/* Section 2.5: Tình yêu thương con người & Tinh thần quốc tế */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+          <div className="glass p-8 rounded-lg">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="text-5xl">❤️</div>
+              <h3 className="text-2xl font-bold text-white">Tình Yêu Thương Con Người</h3>
+            </div>
+            
+            <p className="text-white/75 leading-relaxed mb-4">
+              Tình thương của Bác là tình thương mênh mông dành cho tất cả mọi kiếp người (trừ những kẻ phản bội Tổ quốc).
+            </p>
+            
+            <div className="glass p-6 rounded-lg mb-4">
+              <p className="text-white italic">
+                "Việc gì có lợi cho dân, dù nhỏ, cũng phải hết sức làm; việc gì có hại cho dân, dù nhỏ, cũng phải hết sức tránh"
+              </p>
+            </div>
+
+            <div className="space-y-3 text-white/75 text-sm">
+              <p><strong className="text-white">Câu chuyện minh họa:</strong></p>
+              <p>• <strong className="text-white">Năm 1945:</strong> Bác chủ trương "hũ gạo cứu đói", mỗi tuần nhịn ăn một bữa</p>
+              <p>• <strong className="text-white">Chiến dịch Biên giới:</strong> Bác cởi áo khoác tặng tù binh Pháp bị rét cóng</p>
+            </div>
+          </div>
+
+          <div className="glass p-8 rounded-lg">
+            <div className="flex items-center space-x-4 mb-6">
+              <div className="text-5xl">🌍</div>
+              <h3 className="text-2xl font-bold text-white">Tinh Thần Quốc Tế Trong Sáng</h3>
+            </div>
+            
+            <p className="text-white/75 leading-relaxed mb-4">
+              Kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế vô sản.
+            </p>
+
+            <p className="text-white/75 leading-relaxed">
+              Đoàn kết với nhân dân tiến bộ thế giới vì hòa bình, độc lập dân tộc.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 3: Thực trạng thanh niên */}
+        <div className="glass p-8 rounded-lg mb-20">
+          <div className="text-center mb-8">
+            <div className="text-5xl mb-4">👥</div>
+            <h3 className="text-3xl font-bold text-white mb-4">Thực Trạng Đạo Đức, Lối Sống Thanh Niên Hiện Nay</h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="glass p-6 rounded-lg border-2 border-green-500/30">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="text-3xl">✅</div>
+                <h4 className="text-xl font-bold text-green-400">Mặt tích cực</h4>
+              </div>
+              <p className="text-white/75 text-sm">
+                Trong bối cảnh kinh tế thị trường và Cách mạng 4.0, phần lớn sinh viên vẫn giữ được lối sống nhân hậu, tình nghĩa, năng động, sáng tạo, dám đối mặt với thách thức, có chí lập thân lập nghiệp.
+              </p>
+            </div>
+
+            <div className="glass p-6 rounded-lg border-2 border-orange-500/30">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="text-3xl">⚠️</div>
+                <h4 className="text-xl font-bold text-orange-400">Mặt tiêu cực (Cần cảnh báo)</h4>
+              </div>
+              <ul className="space-y-2 text-white/75 text-sm">
+                <li>• Một bộ phận phai nhạt niềm tin, lý tưởng, mất phương hướng</li>
+                <li>• Lối sống thực dụng, chạy theo đồng tiền, thờ ơ với gia đình và xã hội</li>
+                <li>• Sa vào tệ nạn xã hội, vi phạm pháp luật</li>
+                <li>• "Bệnh" vô cảm, thiếu trách nhiệm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4: Nhiệm vụ của Sinh viên */}
         <div className="glass p-8 rounded-lg">
           <div className="text-center mb-8">
             <div className="text-5xl mb-4">🎓</div>
@@ -155,8 +253,15 @@ export default function CompaniesSection() {
             <Card className="glass p-6 text-center">
               <div className="text-4xl mb-3">🌟</div>
               <h4 className="text-white font-bold mb-2">Trau dồi chuyên môn</h4>
-              <p className="text-white/75 text-sm">Nâng cao kiến thức, giữ vững bản sắc văn hóa Việt Nam</p>
+              <p className="text-white/75 text-sm">Trau dồi chuyên môn, ngoại ngữ để hội nhập quốc tế nhưng giữ vững bản sắc văn hóa Việt Nam</p>
             </Card>
+          </div>
+
+          <div className="glass p-6 rounded-lg max-w-2xl mx-auto mt-8">
+            <h4 className="text-white font-bold mb-3 text-center">Đấu tranh phê phán</h4>
+            <p className="text-white/75 text-sm text-center">
+              Đấu tranh phê phán cái xấu, cái ác, sự vô cảm
+            </p>
           </div>
 
           <div className="mt-8 text-center">
@@ -166,6 +271,9 @@ export default function CompaniesSection() {
               </p>
               <p className="text-white/60 mt-2">- Hồ Chí Minh</p>
             </div>
+            <p className="text-white/75 mt-6 max-w-3xl mx-auto">
+              <strong className="text-white">Lời kêu gọi:</strong> Sinh viên Việt Nam quyết tâm rèn đức, luyện tài để đưa đất nước "sánh vai với các cường quốc năm châu" như Bác hằng mong muốn.
+            </p>
           </div>
         </div>
       </div>

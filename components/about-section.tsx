@@ -82,22 +82,59 @@ export default function AboutSection() {
 
             {/* About Content */}
             <div className="space-y-6 text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Tư Tưởng Hồ Chí Minh</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Quan Điểm Của Đảng</h2>
 
               <div className="space-y-4 text-white/75 leading-relaxed">
-                <p className="text-white font-semibold text-xl">Văn hóa là nền tảng tinh thần</p>
-                <p>
-                  Văn hóa là <strong className="text-white">nền tảng tinh thần của xã hội</strong>, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội. 
-                  Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc; thống nhất mà đa dạng trong cộng đồng các dân tộc Việt Nam.
-                </p>
-                <p>
-                  <strong className="text-white">"Văn hóa còn thì chế độ còn, văn hóa mất thì chế độ mất"</strong> - 
-                  Văn hóa phải gắn kết chặt chẽ, thấm sâu vào toàn bộ đời sống xã hội. Mục tiêu xã hội: Dân chủ, công bằng, văn minh, 
-                  vì lợi ích chân chính và phẩm giá con người.
-                </p>
-                <p className="text-white font-semibold">
-                  Con người là trung tâm của chiến lược phát triển, đồng thời là chủ thể phát triển.
-                </p>
+                <div className="glass p-6 rounded-lg">
+                  <h3 className="text-white font-semibold text-xl mb-3">1. Văn hóa là nền tảng tinh thần</h3>
+                  <p className="mb-2">
+                    <strong className="text-white">Định nghĩa:</strong> Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội.
+                  </p>
+                  <p className="mb-2">
+                    <strong className="text-white">Tính chất:</strong> Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc; thống nhất mà đa dạng trong cộng đồng các dân tộc Việt Nam.
+                  </p>
+                  <p className="italic text-white mt-4">
+                    "Văn hóa còn thì chế độ còn, văn hóa mất thì chế độ mất"
+                  </p>
+                </div>
+
+                <div className="glass p-6 rounded-lg">
+                  <h3 className="text-white font-semibold text-xl mb-3">2. Chiến lược xây dựng con người Việt Nam</h3>
+                  <p className="mb-3">
+                    <strong className="text-white">Vai trò:</strong> Con người là trung tâm của chiến lược phát triển, đồng thời là chủ thể phát triển.
+                  </p>
+                  <p className="text-white font-semibold mb-2">Hệ giá trị con người Việt Nam mới:</p>
+                  <ul className="space-y-1 text-sm">
+                    <li>• Có tinh thần yêu nước, tự cường dân tộc, phấn đấu vì độc lập và CNXH</li>
+                    <li>• Có ý thức tập thể, đoàn kết, phấn đấu vì lợi ích chung</li>
+                    <li>• Lối sống lành mạnh, nếp sống văn minh, cần kiệm, trung thực, nhân nghĩa</li>
+                    <li>• Tôn trọng kỷ cương phép nước, quy ước cộng đồng</li>
+                    <li>• Lao động chăm chỉ với lương tâm nghề nghiệp, có kỹ thuật, sáng tạo</li>
+                    <li>• Thường xuyên học tập nâng cao hiểu biết</li>
+                  </ul>
+                </div>
+
+                <div className="glass p-6 rounded-lg">
+                  <h3 className="text-white font-semibold text-xl mb-3">3. Các nhiệm vụ cụ thể</h3>
+                  <ul className="space-y-3">
+                    <li>
+                      <strong className="text-white">• Xây dựng con người:</strong>
+                      <p className="text-sm mt-1">Phát triển toàn diện, đặc biệt về đạo đức và lối sống; đào tạo nguồn nhân lực chất lượng cao.</p>
+                    </li>
+                    <li>
+                      <strong className="text-white">• Xây dựng gia đình:</strong>
+                      <p className="text-sm mt-1">Gia đình no ấm, tiến bộ, hạnh phúc; gìn giữ phẩm chất truyền thống kết hợp chuẩn mực mới.</p>
+                    </li>
+                    <li>
+                      <strong className="text-white">• Phát triển văn học - nghệ thuật:</strong>
+                      <p className="text-sm mt-1">Sáng tác chân - thiện - mỹ; bảo tồn di sản, quảng bá văn hóa Việt; phát triển công nghiệp văn hóa.</p>
+                    </li>
+                    <li>
+                      <strong className="text-white">• Phát triển khoa học & công nghệ:</strong>
+                      <p className="text-sm mt-1">Kết hợp khoa học tự nhiên & khoa học xã hội với giá trị nhân văn; đầu tư R&D.</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div className="flex justify-center lg:justify-start">

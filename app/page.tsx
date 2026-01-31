@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
 import HeroSection from "@/components/hero-section"
+import ContextSection from "@/components/context-section"
 import TrustedBySection from "@/components/trusted-by-section"
 import AboutSection from "@/components/about-section"
 import CompaniesSection from "@/components/companies-section"
@@ -14,6 +15,10 @@ export default function Home() {
 
       <ScrollFadeWrapper delay={100}>
         <HeroSection />
+      </ScrollFadeWrapper>
+
+      <ScrollFadeWrapper delay={150}>
+        <ContextSection />
       </ScrollFadeWrapper>
 
       <ScrollFadeWrapper delay={200}>
