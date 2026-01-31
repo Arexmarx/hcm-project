@@ -4,9 +4,6 @@ import TrustedBySection from "@/components/trusted-by-section"
 import AboutSection from "@/components/about-section"
 import CompaniesSection from "@/components/companies-section"
 import PortfolioSection from "@/components/portfolio-section"
-import PodcastSection from "@/components/podcast-section"
-import TalksSection from "@/components/talks-section"
-import BlogSection from "@/components/blog-section"
 import Footer from "@/components/footer"
 import ScrollFadeWrapper from "@/components/scroll-fade-wrapper"
 
@@ -19,12 +16,12 @@ export default function Home() {
         <HeroSection />
       </ScrollFadeWrapper>
 
-      <ScrollFadeWrapper delay={200} id="trusted-by">
-        <TrustedBySection />
+      <ScrollFadeWrapper delay={200}>
+        <AboutSection />
       </ScrollFadeWrapper>
 
       <ScrollFadeWrapper delay={300}>
-        <AboutSection />
+        <TrustedBySection />
       </ScrollFadeWrapper>
 
       <ScrollFadeWrapper delay={350}>
@@ -33,18 +30,6 @@ export default function Home() {
 
       <ScrollFadeWrapper delay={400}>
         <PortfolioSection />
-      </ScrollFadeWrapper>
-
-      <ScrollFadeWrapper delay={450}>
-        <PodcastSection />
-      </ScrollFadeWrapper>
-
-      <ScrollFadeWrapper delay={500}>
-        <TalksSection />
-      </ScrollFadeWrapper>
-
-      <ScrollFadeWrapper delay={600}>
-        <BlogSection />
       </ScrollFadeWrapper>
 
       <ScrollFadeWrapper delay={700}>

@@ -71,59 +71,41 @@ export default function AboutSection() {
               <div className="relative group">
                 <div className="absolute -inset-4 glass rounded-full opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <Image
-                  src="/images/profile.jpg"
-                  alt="Artu Grande - Vibecoder & Growth Strategist professional headshot"
+                  src="/images/section1/2.jpg"
+                  alt="Chủ tịch Hồ Chí Minh"
                   width={400}
                   height={400}
-                  className="relative rounded-full border-4 border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105"
+                  className="relative rounded-full border-4 border-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 object-cover"
                 />
               </div>
             </div>
 
             {/* About Content */}
             <div className="space-y-6 text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">About Me – Artu Grande</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Tư Tưởng Hồ Chí Minh</h2>
 
               <div className="space-y-4 text-white/75 leading-relaxed">
-                <p>{renderBioWithLinks(t("about.bio1"))}</p>
-                <p>{renderBioWithLinks(t("about.bio2"))}</p>
-                <p>{renderBioWithLinks(t("about.bio3"))}</p>
-              </div>
-
-              <div className="flex justify-center lg:justify-start items-center gap-6 mt-8">
-                <a
-                  href="https://pbax.polkadot.academy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                >
-                  
-                </a>
-                <a
-                  href="https://devconnect.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
-                >
-                  <Image
-                    src="/icons/devconnect.svg"
-                    alt="Devconnect ARG Ethereum Community Organizers - Artu Grande Scholar"
-                    width={240}
-                    height={240}
-                    className="hover:scale-105 transition-transform duration-300"
-                  />
-                </a>
+                <p className="text-white font-semibold text-xl">Văn hóa là nền tảng tinh thần</p>
+                <p>
+                  Văn hóa là <strong className="text-white">nền tảng tinh thần của xã hội</strong>, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội. 
+                  Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc; thống nhất mà đa dạng trong cộng đồng các dân tộc Việt Nam.
+                </p>
+                <p>
+                  <strong className="text-white">"Văn hóa còn thì chế độ còn, văn hóa mất thì chế độ mất"</strong> - 
+                  Văn hóa phải gắn kết chặt chẽ, thấm sâu vào toàn bộ đời sống xã hội. Mục tiêu xã hội: Dân chủ, công bằng, văn minh, 
+                  vì lợi ích chân chính và phẩm giá con người.
+                </p>
+                <p className="text-white font-semibold">
+                  Con người là trung tâm của chiến lược phát triển, đồng thời là chủ thể phát triển.
+                </p>
               </div>
 
               <div className="flex justify-center lg:justify-start">
                 <Button
                   className="glass glass-hover border border-white/20 hover:border-white/40 text-white font-semibold px-8 py-4 mt-8 group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-white/10"
-                  onClick={() =>
-                    window.open("https://wa.me/5491154000421?text=Hola%2C%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F", "_blank")
-                  }
+                  onClick={() => document.getElementById("values")?.scrollIntoView({ behavior: "smooth" })}
                 >
-                  <MessageCircle className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
-                  {t("about.cta")}
+                  Tìm hiểu thêm
                 </Button>
               </div>
             </div>

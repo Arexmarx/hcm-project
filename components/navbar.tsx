@@ -56,7 +56,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between">
           <Link href="/" className="text-lg sm:text-xl font-bold text-white md:flex-1">
-            Arturo Grande
+            Tư Tưởng Hồ Chí Minh
           </Link>
 
           {isStreamingPage && (
@@ -88,80 +88,41 @@ export default function Navbar() {
               <button
                 onClick={() => scrollToSection("home")}
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to home section"
+                aria-label="Trang chủ"
               >
-                {t("nav.home")}
+                Trang chủ
               </button>
               <button
                 onClick={() => scrollToSection("about")}
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to about section"
+                aria-label="Tư tưởng HCM"
               >
-                {t("nav.about")}
+                Tư tưởng HCM
+              </button>
+              <button
+                onClick={() => scrollToSection("values")}
+                className="nav-item text-white/75 hover:text-white transition-colors relative"
+                aria-label="Bốn trụ cột"
+              >
+                Bốn trụ cột
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to portfolio section"
+                aria-label="Thư viện ảnh"
               >
-                {t("nav.portfolio")}
+                Thư viện
               </button>
-              <button
-                onClick={() => scrollToSection("podcast")}
-                className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to podcast section"
-              >
-                {t("nav.podcast")}
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to articles section"
-              >
-                {t("nav.articles")}
-              </button>
-              <button
-                onClick={() => scrollToSection("talks")}
-                className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to talks section"
-              >
-                {t("nav.talks")}
-              </button>
-              <Link
-                href="/streaming"
-                className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to streaming page"
-              >
-                {t("nav.streaming")}
-              </Link>
-              <Link
-                href="/celo"
-                className="nav-item text-white/75 hover:text-white transition-colors relative inline-flex items-center gap-1.5"
-                aria-label="Navigate to Celo Argentina page"
-              >
-                <Image src="/icons/celo-logo.png" alt="Celo" width={18} height={18} className="rounded-sm" />
-                Celo
-              </Link>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Navigate to contact section"
+                aria-label="Liên hệ"
               >
-                {t("nav.contact")}
+                Liên hệ
               </button>
             </div>
           )}
 
-          <div className="hidden md:flex items-center">
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-2 text-white hover:text-white/80 transition-colors glass px-3 py-2 rounded-lg"
-              aria-label={`Switch to ${language === "en" ? "Spanish" : "English"} language`}
-            >
-              <Globe size={16} />
-              <span className="text-sm font-medium">{language === "en" ? "ES" : "EN"}</span>
-            </button>
-          </div>
 
           <div className="md:hidden flex items-center space-x-3">
             <button

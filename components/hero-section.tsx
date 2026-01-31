@@ -31,87 +31,28 @@ export default function HeroSection() {
           <div className="flex items-center justify-center mb-4 sm:mb-8">
             <div className="glass rounded-full p-1 mr-3 sm:mr-4">
               <Image
-                src="/images/profile.jpg"
-                alt="Artu Grande - Vibecoder & Growth Strategist profile photo"
-                width={40}
-                height={40}
-                className="rounded-full sm:w-[60px] sm:h-[60px]"
+                src="/images/section1/1.jpg"
+                alt="Chủ tịch Hồ Chí Minh"
+                width={80}
+                height={80}
+                className="rounded-full sm:w-[100px] sm:h-[100px] object-cover"
               />
             </div>
             <div className="text-center">
               <p className="text-sm sm:text-lg text-white/75">
-                {language === "en" ? (
-                  <>
-                    Welcome to my <strong>personal portfolio</strong> 👋
-                  </>
-                ) : (
-                  <>
-                    Bienvenido a mi <strong>portfolio personal</strong> 👋
-                  </>
-                )}
+                Tư tưởng Hồ Chí Minh về <strong>Văn hóa và Con người</strong> 🇻🇳
               </p>
             </div>
           </div>
 
           <div className="relative mb-6 sm:mb-12">
             <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white px-2 mb-4">
-              {language === "en" ? (
-                <>
-                  Vibecoder & Growth Strategist <br />
-                  <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-normal text-white/90 block mt-4">
-                    I scale digital products people love, blending UX, Web3, and AI
-                  </span>
-                </>
-              ) : (
-                <>
-                  Vibecoder & Growth Strategist <br />
-                  <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-normal text-white/90 block mt-4">
-                    Escalo productos digitales que la gente ama, combinando UX, Web3 e IA
-                  </span>
-                </>
-              )}
+              XÂY DỰNG VĂN HÓA & CON NGƯỜI VIỆT NAM<br />
+              <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-normal text-white/90 block mt-4">
+                "Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực phát triển"
+              </span>
             </h1>
 
-            {/* Figma icon - moved to top left, away from text */}
-            <div className="absolute -top-8 sm:-top-12 -left-4 sm:-left-8 animate-float-1 transform rotate-12">
-              <div className="glass glass-hover rounded-xl sm:rounded-2xl p-2 sm:p-4 w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Image
-                  src="/images/figma.png"
-                  alt="Figma design tool - Artu Grande UX expertise"
-                  width={20}
-                  height={20}
-                  className="sm:w-[32px] sm:h-[32px] md:w-[40px] md:h-[40px]"
-                />
-              </div>
-            </div>
-
-            <div className="absolute top-12 sm:top-16 -left-4 sm:-left-8 animate-float-2 transform -rotate-6">
-              <div className="glass glass-hover rounded-xl sm:rounded-2xl p-2 sm:p-4 w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Image
-                  src="/icons/v0logo.svg"
-                  alt="v0 AI development tool - Vibecoder expertise"
-                  width={20}
-                  height={20}
-                  className="sm:w-[32px] sm:h-[32px] md:w-[40px] md:h-[40px]"
-                />
-              </div>
-            </div>
-
-            {/* Growth icon - moved to top right, away from text */}
-            <div className="absolute -top-8 sm:-top-12 -right-4 sm:-right-8 animate-float-3 transform rotate-6">
-              <div className="glass glass-hover rounded-xl sm:rounded-2xl p-2 sm:p-4 w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20 flex items-center justify-center">
-                <Image
-                  src="/images/growth.png"
-                  alt="Growth strategy - Digital product scaling expertise"
-                  width={20}
-                  height={20}
-                  className="sm:w-[32px] sm:h-[32px] md:w-[40px] md:h-[40px]"
-                />
-              </div>
-            </div>
-
-            {/* Vibecoding icon - moved below text, centered */}
-            <div className="absolute -bottom-12 sm:-bottom-16 left-1/2 transform -translate-x-1/2 animate-float-1 rotate-3"></div>
           </div>
 
           {/* Stats Cards */}
@@ -119,10 +60,10 @@ export default function HeroSection() {
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
                 <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  📱
+                  🇻🇳
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">{t("hero.card1")}</p>
+                  <p className="font-semibold text-white text-xs sm:text-base">Trung với nước, Hiếu với dân</p>
                 </div>
               </div>
             </Card>
@@ -130,10 +71,10 @@ export default function HeroSection() {
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
                 <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🤖
+                  👨‍🎓
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">{t("hero.card2")}</p>
+                  <p className="font-semibold text-white text-xs sm:text-base">Xây dựng Con người</p>
                 </div>
               </div>
             </Card>
@@ -141,10 +82,10 @@ export default function HeroSection() {
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
                 <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🌍
+                  🏛️
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">{t("hero.card3")}</p>
+                  <p className="font-semibold text-white text-xs sm:text-base">Giữ gìn Bản sắc Văn hóa</p>
                 </div>
               </div>
             </Card>
@@ -152,10 +93,10 @@ export default function HeroSection() {
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
                 <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🚀
+                  🌱
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">{t("hero.card4")}</p>
+                  <p className="font-semibold text-white text-xs sm:text-base">Nếp sống Văn minh</p>
                 </div>
               </div>
             </Card>
