@@ -125,14 +125,6 @@ export default function Navbar() {
 
 
           <div className="md:hidden flex items-center space-x-3">
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-1 text-white hover:text-white/80 transition-colors glass px-2 py-1 rounded-lg ml-2"
-              aria-label={`Switch to ${language === "en" ? "Spanish" : "English"} language`}
-            >
-              <Globe size={14} />
-              <span className="text-xs font-medium">{language === "en" ? "ES" : "EN"}</span>
-            </button>
 
             {(isStreamingPage || isCeloPage) && (
               <Link
@@ -164,76 +156,41 @@ export default function Navbar() {
                 onClick={() => scrollToSection("home")}
                 className="text-white hover:text-white/80 transition-colors py-2"
                 role="menuitem"
-                aria-label="Navigate to home section"
+                aria-label="Trang chủ"
               >
-                {t("nav.home")}
+                Trang chủ
               </button>
               <button
                 onClick={() => scrollToSection("about")}
                 className="text-white hover:text-white/80 transition-colors py-2"
                 role="menuitem"
-                aria-label="Navigate to about section"
+                aria-label="Tư tưởng HCM"
               >
-                {t("nav.about")}
+                Tư tưởng HCM
+              </button>
+              <button
+                onClick={() => scrollToSection("values")}
+                className="text-white hover:text-white/80 transition-colors py-2"
+                role="menuitem"
+                aria-label="Bốn trụ cột"
+              >
+                Bốn trụ cột
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
                 className="text-white hover:text-white/80 transition-colors py-2"
                 role="menuitem"
-                aria-label="Navigate to portfolio section"
+                aria-label="Thư viện"
               >
-                {t("nav.portfolio")}
+                Thư viện
               </button>
-              <button
-                onClick={() => scrollToSection("podcast")}
-                className="text-white hover:text-white/80 transition-colors py-2"
-                role="menuitem"
-                aria-label="Navigate to podcast section"
-              >
-                {t("nav.podcast")}
-              </button>
-              <button
-                onClick={() => scrollToSection("blog")}
-                className="text-white hover:text-white/80 transition-colors py-2"
-                role="menuitem"
-                aria-label="Navigate to articles section"
-              >
-                {t("nav.articles")}
-              </button>
-              <button
-                onClick={() => scrollToSection("talks")}
-                className="text-white hover:text-white/80 transition-colors py-2"
-                role="menuitem"
-                aria-label="Navigate to talks section"
-              >
-                {t("nav.talks")}
-              </button>
-              <Link
-                href="/streaming"
-                className="text-white hover:text-white/80 transition-colors py-2 block"
-                role="menuitem"
-                aria-label="Navigate to streaming page"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {t("nav.streaming")}
-              </Link>
-              <Link
-                href="/celo"
-                className="text-white hover:text-white/80 transition-colors py-2 inline-flex items-center justify-center gap-1.5"
-                role="menuitem"
-                aria-label="Navigate to Celo Argentina page"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Image src="/icons/celo-logo.png" alt="Celo" width={18} height={18} className="rounded-sm" />
-                Celo
-              </Link>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="text-white hover:text-white/80 transition-colors py-2"
                 role="menuitem"
-                aria-label="Navigate to contact section"
+                aria-label="Liên hệ"
               >
-                {t("nav.contact")}
+                Liên hệ
               </button>
             </div>
           </div>
