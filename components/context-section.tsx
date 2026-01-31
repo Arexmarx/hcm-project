@@ -63,14 +63,14 @@ export default function ContextSection() {
 
           {/* Những hạn chế và yếu kém */}
           <div className="mb-12">
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">Những Hạn Chế Và Yếu Kém</h3>
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">Những Hạn Chế Và Yếu Kém</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="glass p-6">
                 <div className="flex items-start space-x-3 mb-4">
                   <div className="text-3xl">📊</div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-3">Vị trí chưa xứng tầm</h4>
+                    <h4 className="text-2xl font-bold text-white mb-3">Vị trí chưa xứng tầm</h4>
                     <ul className="space-y-2 text-white/75">
                       <li>• Văn hóa chưa được quan tâm tương xứng với kinh tế và chính trị</li>
                       <li>• Chưa thật sự trở thành nguồn lực, động lực nội sinh cho sự phát triển bền vững</li>
@@ -83,7 +83,7 @@ export default function ContextSection() {
                 <div className="flex items-start space-x-3 mb-4">
                   <div className="text-3xl">🎭</div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-3">Lệch lạc trong nhận thức</h4>
+                    <h4 className="text-2xl font-bold text-white mb-3">Lệch lạc trong nhận thức</h4>
                     <p className="text-white/75">
                       Còn có chiều hướng coi trọng chức năng giải trí đơn thuần, bỏ qua vai trò giáo dục và phát triển con người
                     </p>
@@ -95,7 +95,7 @@ export default function ContextSection() {
                 <div className="flex items-start space-x-3 mb-4">
                   <div className="text-3xl">🌫️</div>
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-3">Môi trường suy thoái</h4>
+                    <h4 className="text-2xl font-bold text-white mb-3">Môi trường suy thoái</h4>
                     <ul className="space-y-2 text-white/75">
                       <li>• Môi trường văn hóa bị ô nhiễm bởi các tệ nạn xã hội, tham nhũng, tiêu cực</li>
                       <li>• Có sự chênh lệch lớn về hưởng thụ văn hóa giữa các vùng miền (đặc biệt là vùng sâu, vùng xa, đồng bào dân tộc thiểu số)</li>
@@ -108,7 +108,7 @@ export default function ContextSection() {
                 <div className="flex items-start space-x-3 mb-4">
                   <div className="text-3xl">🚨</div>
                   <div>
-                    <h4 className="text-xl font-bold text-red-400 mb-3">Báo động đỏ</h4>
+                    <h4 className="text-2xl font-bold text-red-400 mb-3">Báo động đỏ</h4>
                     <p className="text-white/75">
                       Tình trạng suy thoái về tư tưởng chính trị, đạo đức, lối sống trong Đảng và trong xã hội có chiều hướng gia tăng
                     </p>

@@ -1,8 +1,15 @@
 "use client"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, Users, Building2, Sprout } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
+
+const VietnamFlagIcon = ({ className = "w-5 h-5 sm:w-6 sm:h-6" }) => (
+  <svg viewBox="0 0 900 600" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="900" height="600" fill="#CE1126" />
+    <polygon points="450,100 500,250 660,250 530,340 580,490 450,400 320,490 370,340 240,250 400,250" fill="#FFD700" />
+  </svg>
+)
 
 export default function HeroSection() {
   const { t, language } = useLanguage()
@@ -27,30 +34,9 @@ export default function HeroSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div>
-          {/* Profile Introduction */}
-          <div className="flex items-center justify-center mb-4 sm:mb-8">
-            <div className="glass rounded-full p-1 mr-3 sm:mr-4">
-              <Image
-                src="/images/section1/1.jpg"
-                alt="Chủ tịch Hồ Chí Minh"
-                width={80}
-                height={80}
-                className="rounded-full sm:w-[100px] sm:h-[100px] object-cover"
-              />
-            </div>
-            <div className="text-center">
-              <p className="text-sm sm:text-lg text-white/75">
-                Tư tưởng Hồ Chí Minh về <strong>Văn hóa và Con người</strong> 🇻🇳
-              </p>
-            </div>
-          </div>
-
           <div className="relative mb-6 sm:mb-12">
             <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white px-2 mb-4">
-              XÂY DỰNG VĂN HÓA & CON NGƯỜI VIỆT NAM<br />
-              <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-normal text-white/90 block mt-4">
-                "Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực phát triển"
-              </span>
+              XÂY DỰNG VĂN HÓA, ĐẠO ĐỨC, CON NGƯỜI VIỆT NAM HIỆN NAY THEO TƯ TƯỞNG HỒ CHÍ MINH  
             </h1>
 
           </div>
@@ -59,11 +45,13 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-6 sm:mb-12 px-2">
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
-                <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🇻🇳
+                <div className="transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
+                  <VietnamFlagIcon />
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">Trung với nước, Hiếu với dân</p>
+                  <p className="font-semibold text-white text-xs sm:text-base leading-tight">
+                    Trung với nước,<br />Hiếu với dân
+                  </p>
                 </div>
               </div>
             </Card>
@@ -74,7 +62,9 @@ export default function HeroSection() {
                   👨‍🎓
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">Xây dựng Con người</p>
+                  <p className="font-semibold text-white text-xs sm:text-base leading-tight">
+                    Xây dựng<br />Con người
+                  </p>
                 </div>
               </div>
             </Card>
@@ -85,7 +75,9 @@ export default function HeroSection() {
                   🏛️
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">Giữ gìn Bản sắc Văn hóa</p>
+                  <p className="font-semibold text-white text-xs sm:text-base leading-tight">
+                    Giữ gìn Bản sắc<br />Văn hóa
+                  </p>
                 </div>
               </div>
             </Card>
@@ -96,7 +88,9 @@ export default function HeroSection() {
                   🌱
                 </div>
                 <div>
-                  <p className="font-semibold text-white text-xs sm:text-base">Nếp sống Văn minh</p>
+                  <p className="font-semibold text-white text-xs sm:text-base leading-tight">
+                    Nếp sống<br />Văn minh
+                  </p>
                 </div>
               </div>
             </Card>

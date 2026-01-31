@@ -4,6 +4,13 @@ import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Card } from "@/components/ui/card"
 
+const VietnamFlagIcon = ({ className = "w-5 h-5 sm:w-6 sm:h-6" }) => (
+  <svg viewBox="0 0 900 600" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="900" height="600" fill="#CE1126" />
+    <polygon points="450,100 500,250 660,250 530,340 580,490 450,400 320,490 370,340 240,250 400,250" fill="#FFD700" />
+  </svg>
+)
+
 const coreValues = [
   {
     id: 1,
@@ -11,7 +18,7 @@ const coreValues = [
     description: "Phẩm chất quan trọng nhất. Suốt đời phấn đấu hy sinh vì độc lập, tự do của Tổ quốc.",
     quote: "Một ngày mà Tổ quốc chưa thống nhất, đồng bào còn chịu khổ, là một ngày tôi ăn không ngon, ngủ không yên",
     image: "/images/section1/3.jpg",
-    icon: "🇻🇳"
+    icon: <VietnamFlagIcon />
   },
   {
     id: 2,

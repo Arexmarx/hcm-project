@@ -20,10 +20,10 @@ export default function CompaniesSection() {
             <p className="text-white italic text-lg">
               "Cũng như sông thì có nguồn mới có nước... Người cách mạng phải có đạo đức, không có đạo đức thì dù tài giỏi mấy cũng không lãnh đạo được nhân dân"
             </p>
-            <p className="text-white/60 mt-2">- Hồ Chí Minh</p>
+            <p className="text-white/60 mt-2">- Hồ Chí Minh -</p>
           </div>
           <p className="text-white/75 mt-6">
-            <strong className="text-white">Phương châm:</strong> Đạo đức không phải tự nhiên có, mà do đấu tranh, rèn luyện bền bỉ hàng ngày ("ngọc càng mài càng sáng, vàng càng luyện càng trong")
+            <strong className="text-white">Phương châm:</strong> Đạo đức không phải tự nhiên có, mà do đấu tranh, rèn luyện bền bỉ hàng ngày<br/> "ngọc càng mài càng sáng, vàng càng luyện càng trong"
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function CompaniesSection() {
               <p className="text-white italic text-lg">
                 "Một ngày mà Tổ quốc chưa thống nhất, đồng bào còn chịu khổ, là một ngày tôi ăn không ngon, ngủ không yên"
               </p>
-              <p className="text-white/60 mt-2 text-sm">- Hồ Chí Minh</p>
+              <p className="text-white/60 mt-2 text-sm">- Hồ Chí Minh -</p>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -111,37 +111,37 @@ export default function CompaniesSection() {
 
             <div className="space-y-4">
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Cần</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Cần</h4>
                 <p className="text-white/75 text-sm">Siêng năng, lao động có kế hoạch, sáng tạo</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Kiệm</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Kiệm</h4>
                 <p className="text-white/75 text-sm">Tiết kiệm, không hoang phí</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Liêm</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Liêm</h4>
                 <p className="text-white/75 text-sm">Trong sạch, không tham lam</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Chính</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Chính</h4>
                 <p className="text-white/75 text-sm">Thẳng thắn, đứng đắn</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Chí Công Vô Tư</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Chí Công Vô Tư</h4>
                 <p className="text-white/75 text-sm">Đặt lợi ích công (Tổ quốc, nhân dân) lên trên lợi ích tư</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Đức Khiêm Tốn</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Đức Khiêm Tốn</h4>
                 <p className="text-white/75 text-sm">Không tự mãn, kiêu ngạo, luôn cầu tiến bộ</p>
               </Card>
 
               <Card className="glass p-4">
-                <h4 className="text-white font-bold mb-2">Trung Thực & Trách Nhiệm</h4>
+                <h4 className="text-2xl font-bold text-white mb-2">Trung Thực & Trách Nhiệm</h4>
                 <p className="text-white/75 text-sm">Trung thực với mình, với người, với việc. Dám làm, dám chịu trách nhiệm, không đổ lỗi cho hoàn cảnh</p>
               </Card>
             </div>
@@ -162,14 +162,14 @@ export default function CompaniesSection() {
             
             <div className="glass p-6 rounded-lg mb-4">
               <p className="text-white italic">
-                "Việc gì có lợi cho dân, dù nhỏ, cũng phải hết sức làm; việc gì có hại cho dân, dù nhỏ, cũng phải hết sức tránh"
+                "Việc gì có lợi cho dân, dù nhỏ, <br />cũng phải hết sức làm.<br /> Việc gì có hại cho dân, dù nhỏ,<br /> cũng phải hết sức tránh"
               </p>
             </div>
 
             <div className="space-y-3 text-white/75 text-sm">
               <p><strong className="text-white">Câu chuyện minh họa:</strong></p>
-              <p>• <strong className="text-white">Năm 1945:</strong> Bác chủ trương "hũ gạo cứu đói", mỗi tuần nhịn ăn một bữa</p>
-              <p>• <strong className="text-white">Chiến dịch Biên giới:</strong> Bác cởi áo khoác tặng tù binh Pháp bị rét cóng</p>
+              <p>• <strong className="text-white">Năm 1945:</strong> Bác chủ trương "hũ gạo cứu đói", <br />mỗi tuần nhịn ăn một bữa</p>
+              <p>• <strong className="text-white">Chiến dịch Biên giới:</strong> Bác cởi áo khoác tặng tù binh Pháp bị rét</p>
             </div>
           </div>
 
@@ -180,7 +180,7 @@ export default function CompaniesSection() {
             </div>
             
             <p className="text-white/75 leading-relaxed mb-4">
-              Kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa quốc tế vô sản.
+              Kết hợp chủ nghĩa yêu nước chân chính với chủ nghĩa <br />quốc tế vô sản.
             </p>
 
             <p className="text-white/75 leading-relaxed">
@@ -228,7 +228,7 @@ export default function CompaniesSection() {
             <div className="text-5xl mb-4">🎓</div>
             <h3 className="text-3xl font-bold text-white mb-4">Nhiệm Vụ Của Thanh Niên - Sinh Viên</h3>
             <div className="glass p-6 rounded-lg max-w-3xl mx-auto">
-              <p className="text-white text-xl italic">
+              <p className="text-white text-2xl italic font-bold">
                 "Học để làm gì? Học để phục vụ ai?"
               </p>
               <p className="text-white/90 mt-4">
@@ -266,10 +266,10 @@ export default function CompaniesSection() {
 
           <div className="mt-8 text-center">
             <div className="glass p-6 rounded-lg inline-block">
-              <p className="text-white text-2xl font-bold">
+              <p className="text-white text-3xl font-bold">
                 "Muốn nên sự nghiệp lớn, Tinh thần càng phải cao"
               </p>
-              <p className="text-white/60 mt-2">- Hồ Chí Minh</p>
+              <p className="text-white/60 mt-2">- Hồ Chí Minh -</p>
             </div>
             <p className="text-white/75 mt-6 max-w-3xl mx-auto">
               <strong className="text-white">Lời kêu gọi:</strong> Sinh viên Việt Nam quyết tâm rèn đức, luyện tài để đưa đất nước "sánh vai với các cường quốc năm châu" như Bác hằng mong muốn.

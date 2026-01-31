@@ -55,7 +55,10 @@ export default function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-lg sm:text-xl font-bold text-white md:flex-1">
+          <Link href="/" 
+          className="text-lg sm:text-xl font-bold text-white md:flex-1"
+          onClick={() => scrollToSection("about")}
+          >
             Tư Tưởng Hồ Chí Minh
           </Link>
 
@@ -118,7 +121,7 @@ export default function Navbar() {
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
                 aria-label="Liên hệ"
               >
-                Liên hệ
+                Trích dẫn
               </button>
             </div>
           )}
