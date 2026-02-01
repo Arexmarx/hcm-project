@@ -16,7 +16,7 @@ const coreValues = [
   {
     id: 1,
     title: "Trung với nước, Hiếu với dân",
-    description: "Phẩm chất quan trọng nhất. Suốt đời phấn đấu hy sinh vì độc lập, tự do của Tổ quốc.",
+    description: "Phẩm chất quan trọng nhất. Suốt đời phấn đấu hy sinh vì độc lập,\ntự do của Tổ quốc.",
     quote: "Một ngày mà Tổ quốc chưa thống nhất, đồng bào còn chịu khổ, là một ngày tôi ăn không ngon, ngủ không yên",
     image: "/images/section1/3.jpg",
     icon: <VietnamFlagIcon />
@@ -24,7 +24,7 @@ const coreValues = [
   {
     id: 2,
     title: "Xây dựng Con người",
-    description: "Con người phát triển toàn diện: Đức, Trí, Thể, Mỹ. Có tinh thần yêu nước, tự cường dân tộc, lối sống lành mạnh.",
+    description: "Con người phát triển toàn diện: Đức, Trí, Thể, Mỹ. Có tinh thần \nyêu nước, tự cường dân tộc, lối sống lành mạnh.",
     quote: "Học để làm gì? Học để phụng sự Tổ quốc, phục vụ nhân dân",
     image: "/images/section2/6.jpg",
     icon: <Users className="w-6 h-6 text-white" />
@@ -101,7 +101,7 @@ export default function TrustedBySection() {
                 </div>
                 
                 <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
-                <p className="text-white/75 mb-4 leading-relaxed flex-grow">{value.description}</p>
+                <p className="text-white/75 mb-4 leading-relaxed flex-grow whitespace-pre-line">{value.description}</p>
                 
                 <div className="mt-4 pt-4 border-t border-white/10">
                   <p className="text-white/60 italic text-sm">"{value.quote}"</p>

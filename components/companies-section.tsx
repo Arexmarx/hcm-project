@@ -42,8 +42,8 @@ export default function CompaniesSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight">
-            <span className="text-gradient block leading-tight">Xây Dựng</span>
-            <span className="text-gradient-gold block italic mt-3 leading-tight">Đạo Đức Cách Mạng</span>
+            <span className="text-gradient block leading-snug">Xây Dựng</span>
+            <span className="text-gradient-gold block italic mt-3 leading-snug">Đạo Đức Cách Mạng</span>
           </h2>
           <div className="section-divider my-8"></div>
           <p className="text-white/75 text-lg md:text-xl max-w-3xl mx-auto mb-6 font-body">
@@ -75,7 +75,7 @@ export default function CompaniesSection() {
               onMouseEnter={() => setHoveredImage("/images/section1/1.jpg")}
               onMouseLeave={() => setHoveredImage(null)}
             >
-              Đây là phẩm chất quan trọng nhất. Suốt đời phấn đấu hy sinh vì độc lập, tự do của Tổ quốc và hạnh phúc của nhân dân.
+              Đây là phẩm chất quan trọng nhất. Suốt đời phấn đấu hy sinh vì <br/>độc lập, tự do của Tổ quốc và hạnh phúc của nhân dân.
             </p>
             
             <div 
@@ -326,7 +326,7 @@ export default function CompaniesSection() {
                       <div className="p-2 bg-pink-500/10 rounded-lg group-hover:bg-pink-500/20 transition-all">
                         <ShieldCheck className="w-6 h-6 text-pink-400" />
                       </div>
-                      <h4 className="text-xl font-display font-bold text-white group-hover:text-gradient transition-all">Trung Thực & Trách Nhiệm</h4>
+                      <h4 className="text-xl font-display font-bold text-white group-hover:text-gradient transition-all">Trung Thực & <br/>Trách Nhiệm</h4>
                     </div>
                     <p className="text-white/70 text-sm font-body leading-relaxed">Dám làm, dám chịu trách nhiệm</p>
                   </div>
@@ -360,10 +360,10 @@ export default function CompaniesSection() {
               </p>
             </div>
 
-            <div className="space-y-3 text-white/75 text-sm">
+            <div className="space-y-3 text-white/75 text-md">
               <p><strong className="text-white">Câu chuyện minh họa:</strong></p>
               <p>• <strong className="text-white">Năm 1945:</strong> Bác chủ trương "hũ gạo cứu đói", <br />mỗi tuần nhịn ăn một bữa</p>
-              <p>• <strong className="text-white">Chiến dịch Biên giới:</strong> Bác cởi áo khoác tặng tù binh Pháp bị rét</p>
+              <p>• <strong className="text-white">Chiến dịch Biên giới:</strong> Bác cởi áo khoác tặng tù binh Pháp <br/>bị rét cóng</p>
             </div>
           </div>
 
@@ -502,17 +502,17 @@ export default function CompaniesSection() {
                   onMouseLeave={() => setHoveredImage(null)}
                 >
                   <div className="flex flex-col h-full">
-                    <div className="mb-6">
+                    <div className="mb-6 flex flex-col items-center">
                       <div className="w-16 h-16 bg-white border-4 border-black flex items-center justify-center mb-4">
                         <BookOpen className="w-8 h-8 text-black" />
                       </div>
                       <div className="h-1 w-20 bg-yellow-400 mb-6"></div>
                     </div>
-                    <h4 className="text-white font-display font-black text-3xl mb-4 leading-tight">HỌC TẬP<br />TẤM GƯƠNG</h4>
-                    <p className="text-white/80 text-base font-body leading-relaxed mt-auto">
+                    <h4 className="text-white font-display font-black text-3xl mb-4 leading-tight text-center">HỌC TẬP TẤM GƯƠNG</h4>
+                    <p className="text-white/80 text-base font-body leading-relaxed mt-auto text-md text-center">
                       Tích cực học tập và làm theo tấm gương đạo đức <br/>Hồ Chí Minh
                     </p>
-                    <div className="mt-6 flex items-center gap-2">
+                    <div className="mt-6 flex items-center gap-2 justify-center">
                       <div className="w-2 h-2 bg-yellow-400"></div>
                       <div className="w-4 h-2 bg-white"></div>
                       <div className="w-2 h-2 bg-white/50"></div>
@@ -540,9 +540,9 @@ export default function CompaniesSection() {
                       <div className="w-12 h-12 bg-white flex items-center justify-center flex-shrink-0">
                         <Dumbbell className="w-6 h-6 text-black" />
                       </div>
-                      <div>
+                      <div className="flex-1 text-center">
                         <h4 className="text-white font-display font-black text-xl mb-2 leading-tight">RÈN LUYỆN BẢN LĨNH</h4>
-                        <p className="text-white/70 text-sm font-body">Rèn luyện bản lĩnh chính trị, không dao động trước <br/>cám dỗ</p>
+                        <p className="text-white/70 text-md font-body">Rèn luyện bản lĩnh chính trị, không dao động trước cám dỗ</p>
                       </div>
                     </div>
                   </Card>
@@ -565,9 +565,9 @@ export default function CompaniesSection() {
                       <div className="w-12 h-12 bg-black flex items-center justify-center flex-shrink-0">
                         <GraduationCap className="w-6 h-6 text-yellow-400" />
                       </div>
-                      <div>
+                      <div className="flex-1 text-center">
                         <h4 className="text-black font-display font-black text-xl mb-2 leading-tight">TRAU DỒI CHUYÊN MÔN</h4>
-                        <p className="text-black/70 text-sm font-body">Trau dồi chuyên môn, ngoại ngữ để hội nhập quốc tế</p>
+                        <p className="text-black/70 text-md font-body ">Trau dồi chuyên môn, ngoại ngữ để hội nhập quốc tế</p>
                       </div>
                     </div>
                   </Card>

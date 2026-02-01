@@ -116,13 +116,13 @@ export default function Navbar() {
               >
                 Thư viện
               </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              <Link
+                href="/references"
                 className="nav-item text-white/75 hover:text-white transition-colors relative"
-                aria-label="Liên hệ"
+                aria-label="Trích dẫn"
               >
                 Trích dẫn
-              </button>
+              </Link>
             </div>
           )}
 
@@ -187,14 +187,14 @@ export default function Navbar() {
               >
                 Thư viện
               </button>
-              <button
-                onClick={() => scrollToSection("contact")}
+              <Link
+                href="/references"
                 className="text-white hover:text-white/80 transition-colors py-2"
                 role="menuitem"
-                aria-label="Liên hệ"
+                aria-label="Trích dẫn"
               >
-                Liên hệ
-              </button>
+                Trích dẫn
+              </Link>
             </div>
           </div>
         )}

@@ -205,8 +205,8 @@ export default function AboutSection() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           {item.tasks.map((task, idx) => (
                             <div key={idx} className="p-3 bg-white/5 rounded-lg border border-white/10 hover:border-blue-400/30 transition-all">
-                              <h4 className="text-white font-semibold text-sm mb-1">{task.title}</h4>
-                              <p className="text-white/60 text-xs leading-tight">{task.desc}</p>
+                              <h4 className="text-white text-size-2x1 font-semibold text-sm mb-1">{task.title}</h4>
+                              <p className="text-white/80 text-sm leading-tight">{task.desc}</p>
                             </div>
                           ))}
                         </div>
@@ -233,8 +233,8 @@ export default function AboutSection() {
               <br />
               <span className="text-white">Nên phải xứng đáng với những tiền nhân"</span>
             </p>
-            <div className="inline-block px-6 py-2 bg-blue-500/10 border border-blue-400/40 rounded-full">
-              <p className="text-blue-300 font-mono-custom text-sm tracking-wider">Hồ Chí Minh</p>
+            <div className="inline-block px-6 py-2 ">
+              <p className="text-blue-300 font-mono-custom text-sm tracking-wider">- Hồ Chí Minh -</p>
             </div>
           </Card>
         </motion.div>
