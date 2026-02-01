@@ -86,10 +86,9 @@ export default function PortfolioSection() {
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần VI</span>
           <h2 className="text-5xl md:text-7xl font-display font-black mb-6 animate-text-reveal leading-tight">
-            <span className="text-gradient block">Thư Viện</span>
-            <span className="text-gradient-gold block italic mt-2">Hình Ảnh</span>
+            <span className="text-gradient block leading-tight">Thư Viện</span>
+            <span className="text-gradient-gold block italic mt-3 leading-tight">Hình Ảnh</span>
           </h2>
           <div className="section-divider my-8"></div>
           <p className="text-white/75 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-body">
@@ -107,15 +106,15 @@ export default function PortfolioSection() {
                 whileTap={{ scale: 0.95 }}
                 className={`px-6 py-3 rounded-full font-body font-semibold transition-all duration-300 relative overflow-hidden group ${
                   selectedFilter === filter
-                    ? "glass-enhanced border-2 border-purple-500/50 text-white shadow-lg shadow-purple-500/20"
-                    : "glass border border-white/10 text-white/70 hover:border-white/30 hover:text-white"
+                    ? "glass-enhanced border-2 border-white/30 text-white shadow-lg shadow-white/10"
+                    : "glass border-2 border-white/30 text-white/70 hover:text-white hover:border-white/40"
                 }`}
               >
                 <span className="relative z-10">{filter}</span>
                 {selectedFilter === filter && (
                   <motion.div
                     layoutId="activeFilter"
-                    className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20"
+                    className="absolute inset-0 bg-gradient-to-r from-white/5 to-white/10"
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -131,7 +130,7 @@ export default function PortfolioSection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {filteredImages.map((image, index) => {
               const heights = [280, 320, 360, 300, 340]
@@ -143,11 +142,10 @@ export default function PortfolioSection() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.05, duration: 0.4 }}
-                  className="break-inside-avoid mb-6"
                 >
                   <Card
                     onClick={() => openLightbox(image)}
-                    className="glass-enhanced hover-lift overflow-hidden group cursor-pointer border border-white/10 hover:border-purple-500/30 transition-all duration-300"
+                    className="glass-enhanced hover-lift overflow-hidden group cursor-pointer border border-white/10 hover:border-blue-400/30 transition-all duration-300"
                     style={{ height: `${randomHeight}px` }}
                   >
                     <div className="relative w-full h-full">
@@ -162,7 +160,7 @@ export default function PortfolioSection() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
                       
                       {/* Hover Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
                         <div className="absolute inset-0 flex items-center justify-center">
                           <ZoomIn className="w-12 h-12 text-white transform scale-0 group-hover:scale-100 transition-transform duration-300" />
                         </div>

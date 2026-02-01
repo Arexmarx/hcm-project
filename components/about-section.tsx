@@ -108,15 +108,14 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
           >
             <div className="inline-block mb-6">
-              <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần III</span>
               <div className="h-1 w-24 bg-gradient-to-r from-transparent via-blue-400/40 to-transparent"></div>
             </div>
             <h2 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight">
-              <span className="text-gradient block">Quan Điểm</span>
-              <span className="text-white/90 block italic mt-3">Của Đảng</span>
+              <span className="text-gradient block leading-tight">Quan Điểm</span>
+              <span className="text-white/90 block italic mt-3 leading-tight">Của Đảng</span>
             </h2>
-            <p className="text-white/70 text-lg md:text-xl max-w-3xl mx-auto font-body mt-6">
-              Các quan điểm về xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc
+            <p className="text-white/70 text-lg md:text-xl max-w-4xl mx-auto font-body mt-6 leading-relaxed break-words">
+              Các quan điểm về xây dựng nền văn hóa Việt Nam tiên tiến,<br />đậm đà bản sắc dân tộc
             </p>
           </motion.div>
         </div>

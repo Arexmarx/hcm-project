@@ -41,10 +41,9 @@ export default function CompaniesSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần V</span>
-          <h2 className="text-5xl md:text-7xl font-display font-black mb-6">
-            <span className="text-gradient block">Xây Dựng</span>
-            <span className="text-gradient-gold block italic mt-2">Đạo Đức Cách Mạng</span>
+          <h2 className="text-5xl md:text-7xl font-display font-black mb-6 leading-tight">
+            <span className="text-gradient block leading-tight">Xây Dựng</span>
+            <span className="text-gradient-gold block italic mt-3 leading-tight">Đạo Đức Cách Mạng</span>
           </h2>
           <div className="section-divider my-8"></div>
           <p className="text-white/75 text-lg md:text-xl max-w-3xl mx-auto mb-6 font-body">
@@ -104,8 +103,11 @@ export default function CompaniesSection() {
 
         {/* Section 2: Các phẩm chất đạo đức */}
         <div className="mb-20 relative">
+          {/* Background */}
+          <div className="absolute inset-0 -mx-6 bg-gradient-to-b from-black via-gray-900 to-black rounded-3xl"></div>
+          
           {/* Section Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 relative z-10 pt-12">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -116,17 +118,16 @@ export default function CompaniesSection() {
                 <Award className="w-6 h-6 text-yellow-400 animate-pulse-glow" />
                 <span className="text-yellow-400 font-display font-bold text-xl">Phẩm Chất Đạo Đức</span>
               </div>
-              <h3 className="text-4xl md:text-5xl font-display font-black text-white mb-4">
-                <span className="text-gradient-gold">Nền Tảng</span>
-                <br />
-                <span className="text-white/90">Cách Mạng</span>
+              <h3 className="text-4xl md:text-5xl font-display font-black text-white mb-4 leading-tight">
+                <span className="text-gradient-gold block">Nền Tảng</span>
+                <span className="text-white/90 block mt-2 italic">Cách Mạng</span>
               </h3>
               <div className="section-divider my-6"></div>
             </motion.div>
           </div>
 
           {/* Main Grid Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 relative z-10 pb-12">
             {/* Left: Featured Image */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -336,9 +337,9 @@ export default function CompaniesSection() {
         </div>
 
         {/* Section 2.5: Tình yêu thương con người & Tinh thần quốc tế */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-stretch">
           <div 
-            className="glass p-8 rounded-lg cursor-pointer hover:border-white/30 transition-all"
+            className="glass p-8 rounded-lg cursor-pointer hover:border-white/30 transition-all h-full min-h-[360px]"
             onMouseEnter={() => setHoveredImage("/images/section1/2.jpg")}
             onMouseLeave={() => setHoveredImage(null)}
           >
@@ -346,7 +347,7 @@ export default function CompaniesSection() {
               <div className="rounded-full bg-red-500/10 p-3">
                 <Heart className="w-8 h-8 text-red-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Tình Yêu Thương Con Người</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-white leading-tight">Tình Yêu Thương Con Người</h3>
             </div>
             
             <p className="text-white/75 leading-relaxed mb-4">
@@ -354,7 +355,7 @@ export default function CompaniesSection() {
             </p>
             
             <div className="glass p-6 rounded-lg mb-4">
-              <p className="text-white italic center">
+              <p className="text-white italic text-center">
                 "Việc gì có lợi cho dân, dù nhỏ, <br />cũng phải hết sức làm.<br /> Việc gì có hại cho dân, dù nhỏ,<br /> cũng phải hết sức tránh"
               </p>
             </div>
@@ -367,7 +368,7 @@ export default function CompaniesSection() {
           </div>
 
           <div 
-            className="glass p-8 rounded-lg cursor-pointer hover:border-white/30 transition-all"
+            className="glass p-8 rounded-lg cursor-pointer hover:border-white/30 transition-all h-full min-h-[360px]"
             onMouseEnter={() => setHoveredImage("/images/section1/5.jpeg")}
             onMouseLeave={() => setHoveredImage(null)}
           >
@@ -375,7 +376,7 @@ export default function CompaniesSection() {
               <div className="rounded-full bg-blue-500/10 p-3">
                 <Globe className="w-8 h-8 text-blue-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Tinh Thần Quốc Tế Trong Sáng</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-white leading-tight">Tinh Thần Quốc Tế Trong Sáng</h3>
             </div>
             
             <p className="text-white/75 leading-relaxed mb-4">
@@ -449,9 +450,6 @@ export default function CompaniesSection() {
                 </div>
                 
                 <div className="flex-1">
-                  <div className="inline-block border-l-4 border-yellow-400 pl-4 mb-4">
-                    <span className="text-yellow-400 font-mono-custom text-xs tracking-widest uppercase">Phần V.2</span>
-                  </div>
                   <h3 className="text-4xl md:text-6xl font-display font-black text-white leading-none">
                     NHIỆM VỤ<br className="hidden md:block" />
                     <span className="text-white/70 block md:inline">THANH NIÊN - SINH VIÊN</span>
@@ -472,7 +470,7 @@ export default function CompaniesSection() {
                     </div>
                     <div>
                       <div className="mb-6">
-                        <span className="inline-block bg-yellow-400 text-black px-4 py-1 font-mono-custom text-xs tracking-wider uppercase font-bold">CÂU HỎi CĂN BẢN</span>
+                        <span className="inline-block bg-yellow-400 text-black px-4 py-1 font-mono-custom text-xs tracking-wider uppercase font-bold">CÂU HỎI CĂN BẢN</span>
                       </div>
                       <p className="text-white text-3xl md:text-5xl font-display font-black mb-8 leading-tight">
                         “HỌC ĐỂ LÀM GÌ?<br />HỌC ĐỂ PHỤC VỤ AI?”
@@ -523,53 +521,58 @@ export default function CompaniesSection() {
                 </Card>
               </motion.div>
 
-              {/* Rèn luyện */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-              >
-                <Card 
-                  className="bg-black border-4 border-white/30 p-6 cursor-pointer group hover:border-white transition-all duration-300"
-                  onMouseEnter={() => setHoveredImage("/images/section2/8.jpeg")}
-                  onMouseLeave={() => setHoveredImage(null)}
+              {/* Right Column - Stack with equal height */}
+              <div className="flex flex-col gap-6 md:row-span-2">
+                {/* Rèn luyện */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="flex-1"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white flex items-center justify-center flex-shrink-0">
-                      <Dumbbell className="w-6 h-6 text-black" />
+                  <Card 
+                    className="bg-black border-4 border-white/30 p-6 cursor-pointer group hover:border-white transition-all duration-300 h-full"
+                    onMouseEnter={() => setHoveredImage("/images/section2/8.jpeg")}
+                    onMouseLeave={() => setHoveredImage(null)}
+                  >
+                    <div className="flex items-start gap-4 h-full">
+                      <div className="w-12 h-12 bg-white flex items-center justify-center flex-shrink-0">
+                        <Dumbbell className="w-6 h-6 text-black" />
+                      </div>
+                      <div>
+                        <h4 className="text-white font-display font-black text-xl mb-2 leading-tight">RÈN LUYỆN BẢN LĨNH</h4>
+                        <p className="text-white/70 text-sm font-body">Rèn luyện bản lĩnh chính trị, không dao động trước <br/>cám dỗ</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-white font-display font-black text-xl mb-2 leading-tight">RÈN LUYỆN BẢN LĨNH</h4>
-                      <p className="text-white/70 text-sm font-body">Rèn luyện bản lĩnh chính trị, không dao động trước <br/>cám dỗ</p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
+                  </Card>
+                </motion.div>
 
-              {/* Trau dồi */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-              >
-                <Card 
-                  className="bg-yellow-400 border-4 border-black p-6 cursor-pointer group hover:bg-yellow-300 transition-all duration-300"
-                  onMouseEnter={() => setHoveredImage("/images/section2/9.jpg")}
-                  onMouseLeave={() => setHoveredImage(null)}
+                {/* Trau dồi */}
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                  className="flex-1"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-black flex items-center justify-center flex-shrink-0">
-                      <GraduationCap className="w-6 h-6 text-yellow-400" />
+                  <Card 
+                    className="bg-yellow-400 border-4 border-black p-6 cursor-pointer group hover:bg-yellow-300 transition-all duration-300 h-full"
+                    onMouseEnter={() => setHoveredImage("/images/section2/9.jpg")}
+                    onMouseLeave={() => setHoveredImage(null)}
+                  >
+                    <div className="flex items-start gap-4 h-full">
+                      <div className="w-12 h-12 bg-black flex items-center justify-center flex-shrink-0">
+                        <GraduationCap className="w-6 h-6 text-yellow-400" />
+                      </div>
+                      <div>
+                        <h4 className="text-black font-display font-black text-xl mb-2 leading-tight">TRAU DỒI CHUYÊN MÔN</h4>
+                        <p className="text-black/70 text-sm font-body">Trau dồi chuyên môn, ngoại ngữ để hội nhập quốc tế</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-black font-display font-black text-xl mb-2 leading-tight">TRAU DỐI CHUYÊN MÔN</h4>
-                      <p className="text-black/70 text-sm font-body">Trau dồi chuyên môn, ngoại ngữ để hội nhập quốc tế</p>
-                    </div>
-                  </div>
-                </Card>
-              </motion.div>
+                  </Card>
+                </motion.div>
+              </div>
             </div>
 
             {/* Bottom Section - Stacked Layout */}
@@ -617,7 +620,7 @@ export default function CompaniesSection() {
                 >
                   <div className="text-center">
                     <p className="text-white text-3xl md:text-5xl font-display font-black leading-tight mb-6">
-                      “MUỐN NÊN SỰ NGHIỆP LỜN,<br />
+                      "MUỐN NÊN SỰ NGHIỆP LỚN,<br />
                       <span className="text-yellow-400">TINH THẦN CÀNG PHẢI CAO”</span>
                     </p>
                     <div className="inline-block bg-white px-6 py-2">

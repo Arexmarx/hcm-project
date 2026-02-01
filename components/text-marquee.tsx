@@ -40,7 +40,7 @@ function MarqueeRow({ items, direction = "left" }: { items: string[]; direction?
         {duplicatedItems.map((item, index) => (
           <span
             key={`${item}-${index}`}
-            className="group font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter whitespace-nowrap cursor-default"
+            className="group font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-wide whitespace-nowrap cursor-default"
             style={{
               WebkitTextStroke: "1px rgba(255,255,255,0.35)",
               color: "transparent",
