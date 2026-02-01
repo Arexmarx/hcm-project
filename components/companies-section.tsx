@@ -449,9 +449,12 @@ export default function CompaniesSection() {
                 </div>
                 
                 <div className="flex-1">
+                  <div className="inline-block border-l-4 border-yellow-400 pl-4 mb-4">
+                    <span className="text-yellow-400 font-mono-custom text-xs tracking-widest uppercase">Phần V.2</span>
+                  </div>
                   <h3 className="text-4xl md:text-6xl font-display font-black text-white leading-none">
-                    NHIỆM VỤ<br />
-                    <span className="text-white/70">THANH NIÊN - SINH VIÊN</span>
+                    NHIỆM VỤ<br className="hidden md:block" />
+                    <span className="text-white/70 block md:inline">THANH NIÊN - SINH VIÊN</span>
                   </h3>
                 </div>
               </div>

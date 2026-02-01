@@ -61,7 +61,7 @@ export default function ContextSection() {
             <div className="inline-block mb-4">
               <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase">Phần II</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-display font-black mb-6 animate-text-reveal">
+            <h2 className="text-5xl md:text-7xl font-display font-black mb-6 animate-text-reveal leading-tight">
               <span className="text-gradient block">Bối Cảnh</span>
               <span className="text-white/90 block italic mt-2">& Thực Trạng</span>
             </h2>
