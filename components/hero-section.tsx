@@ -35,14 +35,12 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div>
           <div className="relative mb-6 sm:mb-12">
+            <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-6\">Phần I</span>
             <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-black leading-tight px-2 mb-6 animate-text-reveal">
-              <span className="inline-block animate-text-shimmer tracking-tight">XÂY DỰNG</span>
-              <br />
-              <span className="inline-block text-gradient-gold mt-2 text-3xl sm:text-5xl md:text-6xl lg:text-8xl italic">Văn Hóa & Đạo Đức</span>
-              <br />
-              <span className="inline-block animate-text-shimmer mt-2 text-lg sm:text-2xl md:text-3xl lg:text-5xl font-light tracking-wide">Con Người Việt Nam</span>
-              <br />
-              <span className="inline-block text-white/60 mt-4 text-sm sm:text-base md:text-lg font-body">Theo Tư Tưởng Hồ Chí Minh</span>
+              <span className="inline-block animate-text-shimmer tracking-tight block">XÂY DỰNG</span>
+              <span className="inline-block text-gradient-gold mt-2 text-3xl sm:text-5xl md:text-6xl lg:text-8xl italic block">Văn Hóa & Đạo Đức</span>
+              <span className="inline-block animate-text-shimmer mt-2 text-lg sm:text-2xl md:text-3xl lg:text-5xl font-light tracking-wide block">Con Người Việt Nam</span>
+              <span className="inline-block text-white/60 mt-4 text-sm sm:text-base md:text-lg font-body block">Theo Tư Tưởng Hồ Chí Minh</span>
             </h1>
 
           </div>
