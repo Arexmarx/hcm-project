@@ -146,7 +146,7 @@ export default function CompaniesSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white/90 font-display text-lg italic leading-relaxed">
-                      "Con người cách mạng phải có đạo đức cách mạng"
+                      "Con người cách mạng phải có <br/>đạo đức cách mạng"
                     </p>
                     <p className="text-yellow-400 mt-2 text-sm font-body">- Hồ Chí Minh -</p>
                   </div>
@@ -354,7 +354,7 @@ export default function CompaniesSection() {
             </p>
             
             <div className="glass p-6 rounded-lg mb-4">
-              <p className="text-white italic">
+              <p className="text-white italic center">
                 "Việc gì có lợi cho dân, dù nhỏ, <br />cũng phải hết sức làm.<br /> Việc gì có hại cho dân, dù nhỏ,<br /> cũng phải hết sức tránh"
               </p>
             </div>
@@ -407,7 +407,7 @@ export default function CompaniesSection() {
             <div className="glass p-6 rounded-lg border-2 border-green-500/30">
               <div className="flex items-center space-x-3 mb-4">
                 <CircleCheck className="w-8 h-8 text-green-400" />
-                <h4 className="text-xl font-bold text-green-400">Mặt tích cực</h4>
+                <h4 className="text-2xl font-bold text-green-400">Mặt tích cực</h4>
               </div>
               <p className="text-white/75 text-sm">
                 Trong bối cảnh kinh tế thị trường và Cách mạng 4.0, phần lớn sinh viên vẫn giữ được lối sống nhân hậu, tình nghĩa, năng động, sáng tạo, dám đối mặt với thách thức, có chí lập thân lập nghiệp.
@@ -417,7 +417,7 @@ export default function CompaniesSection() {
             <div className="glass p-6 rounded-lg border-2 border-orange-500/30">
               <div className="flex items-center space-x-3 mb-4">
                 <CircleAlert className="w-8 h-8 text-orange-400" />
-                <h4 className="text-xl font-bold text-orange-400">Mặt tiêu cực (Cần cảnh báo)</h4>
+                <h4 className="text-2xl font-bold text-orange-400">Mặt tiêu cực (Cần cảnh báo)</h4>
               </div>
               <ul className="space-y-2 text-white/75 text-sm">
                 <li>• Một bộ phận phai nhạt niềm tin, lý tưởng, mất phương hướng</li>
