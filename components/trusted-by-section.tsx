@@ -70,7 +70,7 @@ export default function TrustedBySection() {
     <section id="values" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-20">
-          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần V</span>
+          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần IV</span>
           <h2 className="text-5xl md:text-7xl font-display font-black mb-6 animate-text-reveal leading-tight">
             <span className="text-gradient-gold block">Bốn Trụ Cột</span>
             <span className="text-white/90 block italic mt-2">Văn Hóa & Con Người</span>

@@ -67,7 +67,7 @@ export default function Footer() {
               <p className="text-white italic text-lg">
                 "Muốn nên sự nghiệp lớn, Tinh thần càng phải cao"
               </p>
-              <p className="text-white/60 mt-2 text-sm">- Hồ Chí Minh</p>
+              <p className="text-white/60 mt-2 text-sm">- Hồ Chí Minh - </p>
             </div>
           </div>
         </div>

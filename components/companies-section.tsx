@@ -41,7 +41,7 @@ export default function CompaniesSection() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
-          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần IV</span>
+          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần V</span>
           <h2 className="text-5xl md:text-7xl font-display font-black mb-6">
             <span className="text-gradient block">Xây Dựng</span>
             <span className="text-gradient-gold block italic mt-2">Đạo Đức Cách Mạng</span>
@@ -85,7 +85,7 @@ export default function CompaniesSection() {
               onMouseLeave={() => setHoveredImage(null)}
             >
               <p className="text-white italic text-lg">
-                "Một ngày mà Tổ quốc chưa thống nhất, đồng bào còn chịu khổ, là một ngày tôi ăn không ngon, ngủ không yên"
+                "Một ngày mà Tổ quốc chưa thống nhất, đồng bào còn chịu khổ, là một ngày tôi ăn không ngon, <br/>ngủ không yên"
               </p>
               <p className="text-white/60 mt-2 text-sm">- Hồ Chí Minh -</p>
             </div>
@@ -449,9 +449,6 @@ export default function CompaniesSection() {
                 </div>
                 
                 <div className="flex-1">
-                  <div className="inline-block border-l-4 border-yellow-400 pl-4 mb-4">
-                    <span className="text-yellow-400 font-mono-custom text-xs tracking-widest uppercase">Phần IV</span>
-                  </div>
                   <h3 className="text-4xl md:text-6xl font-display font-black text-white leading-none">
                     NHIỆM VỤ<br />
                     <span className="text-white/70">THANH NIÊN - SINH VIÊN</span>
@@ -642,7 +639,7 @@ export default function CompaniesSection() {
                       </div>
                     </div>
                     <div>
-                      <h5 className="text-yellow-400 font-display font-black text-xl mb-3 tracking-wide">LỜI KÊU GỌ</h5>
+                      <h5 className="text-yellow-400 font-display font-black text-xl mb-3 tracking-wide">LỜI KÊU GỌI</h5>
                       <p className="text-white/90 text-lg font-body leading-relaxed">
                         Sinh viên Việt Nam quyết tâm rèn đức, luyện tài để đưa đất nước <span className="text-white font-bold">“sánh vai với các cường quốc năm châu”</span> như Bác hằng mong muốn.
                       </p>
