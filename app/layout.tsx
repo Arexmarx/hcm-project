@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Space_Grotesk } from "next/font/google"
+import { Space_Grotesk, Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import { LanguageProvider } from "@/contexts/language-context"
 
@@ -10,6 +10,19 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   preload: true,
   fallback: ["system-ui", "arial"],
+})
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+  weight: ["400", "700", "900"],
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
 })
 
 export const metadata: Metadata = {
@@ -80,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="vi" className={`${spaceGrotesk.variable} antialiased`}>
+    <html lang="vi" className={`${spaceGrotesk.variable} ${playfairDisplay.variable} ${inter.variable} antialiased`}>
       <head>
         <link rel="preload" href="/images/section1/1.jpg" as="image" type="image/jpeg" />
         <link rel="preload" href="/images/section1/2.jpg" as="image" type="image/jpeg" />
@@ -116,7 +129,7 @@ export default function RootLayout({
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       </head>
-      <body className={spaceGrotesk.className}>
+      <body className={`${spaceGrotesk.className} cursor-none`}>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>

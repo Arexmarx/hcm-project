@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { Card } from "@/components/ui/card"
+import { Landmark, Leaf, Users } from "lucide-react"
 
 const VietnamFlagIcon = ({ className = "w-5 h-5 sm:w-6 sm:h-6" }) => (
   <svg viewBox="0 0 900 600" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +27,7 @@ const coreValues = [
     description: "Con người phát triển toàn diện: Đức, Trí, Thể, Mỹ. Có tinh thần yêu nước, tự cường dân tộc, lối sống lành mạnh.",
     quote: "Học để làm gì? Học để phụng sự Tổ quốc, phục vụ nhân dân",
     image: "/images/section2/6.jpg",
-    icon: "👨‍🎓"
+    icon: <Users className="w-6 h-6 text-white" />
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const coreValues = [
     description: "Xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc; thống nhất mà đa dạng.",
     quote: "Văn hóa còn thì chế độ còn, văn hóa mất thì chế độ mất",
     image: "/images/section3/10.jpg",
-    icon: "🏛️"
+    icon: <Landmark className="w-6 h-6 text-white" />
   },
   {
     id: 4,
@@ -42,7 +43,7 @@ const coreValues = [
     description: "Xây dựng môi trường văn hóa lành mạnh, nếp sống văn minh, bảo vệ môi trường cho thế hệ tương lai.",
     quote: "Việc gì có lợi cho dân, dù nhỏ, cũng phải hết sức làm; việc gì có hại cho dân, dù nhỏ, cũng phải hết sức tránh",
     image: "/images/section4/14.jpeg",
-    icon: "🌱"
+    icon: <Leaf className="w-6 h-6 text-white" />
   }
 ]
 
@@ -68,11 +69,14 @@ export default function TrustedBySection() {
   return (
     <section id="values" className="py-20 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Bốn Trụ Cột Văn Hóa & Con Người
+        <div className="text-center mb-20">
+          <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần V</span>
+          <h2 className="text-5xl md:text-7xl font-display font-black mb-6 animate-text-reveal leading-tight">
+            <span className="text-gradient-gold block">Bốn Trụ Cột</span>
+            <span className="text-white/90 block italic mt-2">Văn Hóa & Con Người</span>
           </h2>
-          <p className="text-white/75 text-lg max-w-3xl mx-auto">
+          <div className="section-divider my-8"></div>
+          <p className="text-white/75 text-lg md:text-xl max-w-3xl mx-auto font-body">
             Theo tư tưởng Hồ Chí Minh, xây dựng văn hóa và con người Việt Nam dựa trên bốn giá trị cốt lõi
           </p>
         </div>
@@ -81,8 +85,8 @@ export default function TrustedBySection() {
           {coreValues.map((value, index) => (
             <Card 
               key={value.id} 
-              className="glass glass-hover p-8 group hover:scale-105 transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="glass-enhanced hover-lift p-8 group animate-pulse-glow"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex flex-col h-full">
                 <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">

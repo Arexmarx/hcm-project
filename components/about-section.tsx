@@ -8,7 +8,13 @@ import { MessageCircle } from "lucide-react"
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null)
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const { t } = useLanguage()
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    setMousePosition({ x: e.clientX, y: e.clientY })
+  }
 
   const renderBioWithLinks = (text: string) => {
     // Replace link placeholders with actual JSX links
@@ -60,8 +66,29 @@ export default function AboutSection() {
   }, [])
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 relative" onMouseMove={handleMouseMove}>
       <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
+
+      {/* Hover Image Tooltip */}
+      {hoveredImage && (
+        <div 
+          className="fixed z-[100] pointer-events-none transition-opacity duration-200"
+          style={{ 
+            left: `${mousePosition.x + 20}px`, 
+            top: `${mousePosition.y + 20}px`,
+          }}
+        >
+          <div className="glass rounded-lg overflow-hidden shadow-2xl border-2 border-white/20">
+            <Image
+              src={hoveredImage}
+              alt="Preview"
+              width={300}
+              height={200}
+              className="object-cover"
+            />
+          </div>
+        </div>
+      )}
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? "animate-slide-up" : "opacity-0"}`}>
@@ -81,11 +108,23 @@ export default function AboutSection() {
             </div>
 
             {/* About Content */}
-            <div className="space-y-6 text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Quan Điểm Của Đảng</h2>
+            <div className="space-y-8 text-center lg:text-left">
+              <div>
+                <span className="text-xs font-mono-custom tracking-widest text-white/50 uppercase block mb-4">Phần III</span>
+                <h2 className="text-5xl md:text-6xl font-display font-black mb-4 animate-text-reveal leading-tight">
+                  <span className="text-gradient">Quan Điểm</span>
+                  <br />
+                  <span className="text-white/90 italic">Của Đảng</span>
+                </h2>
+                <div className="section-divider my-6"></div>
+              </div>
 
               <div className="space-y-4 text-white/75 leading-relaxed">
-                <div className="glass p-6 rounded-lg">
+                <div 
+                  className="glass-enhanced hover-lift p-6 rounded-lg cursor-pointer"
+                  onMouseEnter={() => setHoveredImage("/images/section3/10.jpg")}
+                  onMouseLeave={() => setHoveredImage(null)}
+                >
                   <h3 className="text-white font-semibold text-xl mb-3">1. Văn hóa là nền tảng tinh thần</h3>
                   <p className="mb-2">
                     <strong className="text-white">Định nghĩa:</strong> Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế - xã hội.
@@ -98,7 +137,11 @@ export default function AboutSection() {
                   </p>
                 </div>
 
-                <div className="glass p-6 rounded-lg">
+                <div 
+                  className="glass p-6 rounded-lg cursor-pointer hover:border-white/30 transition-all"
+                  onMouseEnter={() => setHoveredImage("/images/section2/6.jpg")}
+                  onMouseLeave={() => setHoveredImage(null)}
+                >
                   <h3 className="text-white font-semibold text-xl mb-3">2. Chiến lược xây dựng con người Việt Nam</h3>
                   <p className="mb-3">
                     <strong className="text-white">Vai trò:</strong> Con người là trung tâm của chiến lược phát triển, đồng thời là chủ thể phát triển.
@@ -114,7 +157,11 @@ export default function AboutSection() {
                   </ul>
                 </div>
 
-                <div className="glass p-6 rounded-lg">
+                <div 
+                  className="glass p-6 rounded-lg cursor-pointer hover:border-white/30 transition-all"
+                  onMouseEnter={() => setHoveredImage("/images/section4/17.jpg")}
+                  onMouseLeave={() => setHoveredImage(null)}
+                >
                   <h3 className="text-white font-semibold text-xl mb-3">3. Các nhiệm vụ cụ thể</h3>
                   <ul className="space-y-3">
                     <li>

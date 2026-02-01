@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import { Card } from "@/components/ui/card"
-import { ChevronDown, Users, Building2, Sprout } from "lucide-react"
+import { ChevronDown, Users, Landmark, Sprout } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
 const VietnamFlagIcon = ({ className = "w-5 h-5 sm:w-6 sm:h-6" }) => (
@@ -35,15 +35,21 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div>
           <div className="relative mb-6 sm:mb-12">
-            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white px-2 mb-4">
-              XÂY DỰNG VĂN HÓA, ĐẠO ĐỨC, CON NGƯỜI VIỆT NAM HIỆN NAY THEO TƯ TƯỞNG HỒ CHÍ MINH  
+            <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-display font-black leading-tight px-2 mb-6 animate-text-reveal">
+              <span className="inline-block animate-text-shimmer tracking-tight">XÂY DỰNG</span>
+              <br />
+              <span className="inline-block text-gradient-gold mt-2 text-3xl sm:text-5xl md:text-6xl lg:text-8xl italic">Văn Hóa & Đạo Đức</span>
+              <br />
+              <span className="inline-block animate-text-shimmer mt-2 text-lg sm:text-2xl md:text-3xl lg:text-5xl font-light tracking-wide">Con Người Việt Nam</span>
+              <br />
+              <span className="inline-block text-white/60 mt-4 text-sm sm:text-base md:text-lg font-body">Theo Tư Tưởng Hồ Chí Minh</span>
             </h1>
 
           </div>
 
           {/* Stats Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 mb-6 sm:mb-12 px-2">
-            <Card className="glass glass-hover p-3 sm:p-6 text-center group">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12 px-2">
+            <Card className="glass-enhanced hover-lift p-4 sm:p-6 text-left group animate-float-slow border-l-4 border-red-500/50">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
                 <div className="transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
                   <VietnamFlagIcon />
@@ -58,8 +64,8 @@ export default function HeroSection() {
 
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
-                <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  👨‍🎓
+                <div className="rounded-full bg-white/10 p-2 sm:p-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-white text-xs sm:text-base leading-tight">
@@ -71,8 +77,8 @@ export default function HeroSection() {
 
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
-                <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🏛️
+                <div className="rounded-full bg-white/10 p-2 sm:p-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <Landmark className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-white text-xs sm:text-base leading-tight">
@@ -84,8 +90,8 @@ export default function HeroSection() {
 
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
-                <div className="text-lg sm:text-2xl transition-all duration-300 group-hover:scale-110 group-hover:rotate-12">
-                  🌱
+                <div className="rounded-full bg-white/10 p-2 sm:p-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <Sprout className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <div>
                   <p className="font-semibold text-white text-xs sm:text-base leading-tight">
