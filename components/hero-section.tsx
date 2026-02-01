@@ -4,13 +4,6 @@ import { Card } from "@/components/ui/card"
 import { ChevronDown, Users, Landmark, Sprout } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
-const VietnamFlagIcon = ({ className = "w-5 h-5 sm:w-6 sm:h-6" }) => (
-  <svg viewBox="0 0 900 600" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="900" height="600" fill="#CE1126" />
-    <polygon points="450,100 500,250 660,250 530,340 580,490 450,400 320,490 370,340 240,250 400,250" fill="#FFD700" />
-  </svg>
-)
-
 export default function HeroSection() {
   const { t, language } = useLanguage()
 
@@ -48,8 +41,11 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12 px-2">
             <Card className="glass glass-hover p-3 sm:p-6 text-center group">
               <div className="flex items-start justify-center space-x-2 sm:space-x-3">
-                <div className="transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
-                  <VietnamFlagIcon />
+                <div className="rounded-full bg-white/10 p-2 sm:p-3 transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                  <svg viewBox="0 0 200 200" className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" strokeWidth="12"/>
+                    <polygon points="100,40 130,80 175,80 145,115 160,155 100,120 40,155 55,115 25,80 70,80" fill="currentColor"/>
+                  </svg>
                 </div>
                 <div>
                   <p className="font-semibold text-white text-xs sm:text-base leading-tight">
