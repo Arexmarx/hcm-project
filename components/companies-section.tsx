@@ -421,7 +421,7 @@ export default function CompaniesSection() {
               </div>
               <ul className="space-y-2 text-white/75 text-sm">
                 <li>• Một bộ phận phai nhạt niềm tin, lý tưởng, mất phương hướng</li>
-                <li>• Lối sống thực dụng, chạy theo đồng tiền, thờ ơ với gia đình và xã hội</li>
+                <li>• Lối sống thực dụng, chạy theo đồng tiền, thờ ơ với gia đình <br/>và xã hội</li>
                 <li>• Sa vào tệ nạn xã hội, vi phạm pháp luật</li>
                 <li>• "Bệnh" vô cảm, thiếu trách nhiệm</li>
               </ul>
@@ -509,7 +509,7 @@ export default function CompaniesSection() {
                     </div>
                     <h4 className="text-white font-display font-black text-3xl mb-4 leading-tight">HỌC TẬP<br />TẤM GƯƠNG</h4>
                     <p className="text-white/80 text-base font-body leading-relaxed mt-auto">
-                      Tích cực học tập và làm theo tấm gương đạo đức Hồ Chí Minh
+                      Tích cực học tập và làm theo tấm gương đạo đức <br/>Hồ Chí Minh
                     </p>
                     <div className="mt-6 flex items-center gap-2">
                       <div className="w-2 h-2 bg-yellow-400"></div>
@@ -538,7 +538,7 @@ export default function CompaniesSection() {
                     </div>
                     <div>
                       <h4 className="text-white font-display font-black text-xl mb-2 leading-tight">RÈN LUYỆN BẢN LĨNH</h4>
-                      <p className="text-white/70 text-sm font-body">Rèn luyện bản lĩnh chính trị, không dao động trước cám dỗ</p>
+                      <p className="text-white/70 text-sm font-body">Rèn luyện bản lĩnh chính trị, không dao động trước <br/>cám dỗ</p>
                     </div>
                   </div>
                 </Card>
@@ -641,7 +641,7 @@ export default function CompaniesSection() {
                     <div>
                       <h5 className="text-yellow-400 font-display font-black text-xl mb-3 tracking-wide">LỜI KÊU GỌI</h5>
                       <p className="text-white/90 text-lg font-body leading-relaxed">
-                        Sinh viên Việt Nam quyết tâm rèn đức, luyện tài để đưa đất nước <span className="text-white font-bold">“sánh vai với các cường quốc năm châu”</span> như Bác hằng mong muốn.
+                        Sinh viên Việt Nam quyết tâm rèn đức, luyện tài để đưa đất nước <span className="text-white font-bold"><br/>“sánh vai với các cường quốc năm châu”</span> như Bác hằng mong muốn.
                       </p>
                     </div>
                   </div>

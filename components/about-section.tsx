@@ -150,7 +150,7 @@ export default function AboutSection() {
                   <ul className="space-y-1 text-sm">
                     <li>• Có tinh thần yêu nước, tự cường dân tộc, phấn đấu vì độc lập và CNXH</li>
                     <li>• Có ý thức tập thể, đoàn kết, phấn đấu vì lợi ích chung</li>
-                    <li>• Lối sống lành mạnh, nếp sống văn minh, cần kiệm, trung thực, nhân nghĩa</li>
+                    <li>• Lối sống lành mạnh, nếp sống văn minh, cần kiệm, trung thực, <br/>nhân nghĩa</li>
                     <li>• Tôn trọng kỷ cương phép nước, quy ước cộng đồng</li>
                     <li>• Lao động chăm chỉ với lương tâm nghề nghiệp, có kỹ thuật, sáng tạo</li>
                     <li>• Thường xuyên học tập nâng cao hiểu biết</li>
@@ -178,7 +178,7 @@ export default function AboutSection() {
                     </li>
                     <li>
                       <strong className="text-white">• Phát triển khoa học & công nghệ:</strong>
-                      <p className="text-sm mt-1">Kết hợp khoa học tự nhiên & khoa học xã hội với giá trị nhân văn; đầu tư R&D.</p>
+                      <p className="text-sm mt-1">Kết hợp khoa học tự nhiên & khoa học xã hội với giá trị nhân văn; <br/>đầu tư R&D.</p>
                     </li>
                   </ul>
                 </div>

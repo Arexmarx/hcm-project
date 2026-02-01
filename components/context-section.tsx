@@ -179,7 +179,7 @@ export default function ContextSection() {
                   <div>
                     <h4 className="text-2xl font-bold text-red-400 mb-3">Báo động đỏ</h4>
                     <p className="text-white/75">
-                      Tình trạng suy thoái về tư tưởng chính trị, đạo đức, lối sống trong Đảng và trong xã hội có chiều hướng gia tăng
+                      Tình trạng suy thoái về tư tưởng chính trị, đạo đức, lối sống trong Đảng và trong xã hội có chiều hướng <br/>gia tăng
                     </p>
                   </div>
                 </div>
