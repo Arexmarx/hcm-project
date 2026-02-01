@@ -142,6 +142,125 @@ export default function ReferencesPage() {
           </div>
         )}
 
+        <div className="mt-16 pt-12 border-t border-white/10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="glass-enhanced p-8 rounded-lg border border-blue-500/20"
+          >
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500/20 text-blue-400">
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-white mb-3">Trích dẫn nội dung</h3>
+                <p className="text-white/75 text-sm leading-relaxed mb-3">
+                  Trích dẫn các nguồn tài liệu tham khảo được sử dụng trong dự án này:
+                </p>
+                <ul className="space-y-2 text-white/70 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.3, tr.413</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.5, tr.338</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII, Sđd, t.1, tr.84</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đại hội đại biểu toàn quốc lần thứ XI, Sđd, tr.76</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII, Sđd, t.I, tr.115-116</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Xem Đảng Cộng sản Việt Nam: Văn kiện Đảng toàn tập, Sđd, tr.126-131</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đại tướng Võ Nguyên Giáp (Chủ biên): Tư tưởng Hồ Chí Minh và con đường cách mạng Việt Nam, Nxb. Chính trị quốc gia, Hà Nội, 1000, tr.290</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.11, tr.399</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.5, tr.216</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.13, tr.298</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.11, tr.400</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đảng toàn tập, Sđd, t.65, tr.175</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đại hội đại biểu toàn quốc lần thứ XII, Sđd, tr.61</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Đảng Cộng sản Việt Nam: Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII, Sđd, t.1, tr.82-83</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.7, tr.50</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.4, tr.470</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.10, tr.513</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.8, tr.508</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.7, tr.288</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.4, tr.187</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.15, tr.674</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">•</span>
+                    <span>Hồ Chí Minh: Toàn tập, Sđd, t.3, tr.305</span>
+                  </li>
+                </ul>
+                <p className="text-white/60 text-xs mt-4 italic">
+                  Mục đích của việc sử dụng các trích dẫn này là để đảm bảo tính chính xác và độ tin cậy của nội dung được trình bày trong dự án.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+          </div>
+
+
         {/* AI Disclosure Section */}
         <div className="mt-16 pt-12 border-t border-white/10">
           <motion.div
@@ -193,3 +312,4 @@ export default function ReferencesPage() {
     </>
   )
 }
+  
